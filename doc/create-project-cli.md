@@ -11,4 +11,12 @@ dotnet sln ./DineEase.sln add ./src/Domain
 dotnet sln ./DineEase.sln add ./src/Application
 dotnet sln ./DineEase.sln add ./src/Infrastructure/Infrastructure
 dotnet sln ./DineEase.sln add ./src/Infrastructure/Persistance
+dotnet add ./src/Application reference ./src/Domain
+dotnet add ./src/API reference ./src/Application
+dotnet add ./src/Application reference ./src/Infrastructure/Infrastructure
+dotnet add ./src/Application reference ./src/Infrastructure/Persistance
+dotnet add ./src/Infrastructure/Persistance package Microsoft.EntityFrameworkCore
+dotnet add ./src/Infrastructure/Persistance package Microsoft.EntityFrameworkCore.Design
+dotnet add ./src/Infrastructure/Persistance package Microsoft.EntityFrameworkCore.SqlServer
+dotnet add ./src/API package Microsoft.EntityFrameworkCore.SqlServer
 ```
