@@ -42,7 +42,7 @@ plt.title("Menu Management Domain Model")
 plt.show()
 
 ```
-![image info](menu_management_domain_model.png "Menu Management Doamin Model")
+![image info](menu_management_domain_model_organized.png "Menu Management Doamin Model")
 
 Here is the diagram representing the domain model for the Menu Management system. Each node represents an entity, and the arrows represent relationships between those entities. This visual gives an overview of how the components, such as `MenuItem`, `Category`, `Menu`, `Order`, and others, interact with each other within the system.
 
